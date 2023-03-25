@@ -9,7 +9,7 @@ WORKDIR /build
 RUN apt-get update
 RUN apt-get install -y git clang cmake libsnappy-dev
 
-RUN git clone --branch $VERSION https://github.com/romanz/electrs .
+RUN git clone --branch $VERSION https://github.com/bthanh18391/electrs .
 
 # cargo under QEMU building for ARM can consumes 10s of GBs of RAM...
 # Solution: https://users.rust-lang.org/t/cargo-uses-too-much-memory-being-run-in-qemu/76531/2
